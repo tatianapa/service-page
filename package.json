@@ -1,8 +1,8 @@
 {
   "name": "service-example",
   "version": "1.0.0",
-  "description": "trillo app",
-  "author": "Jonas",
+  "description": "Service provider company landing page - PSD to html & css",
+  "author": "Tatiana Pavlov",
   "license": "ISC",
   "scripts": {
     "compile:sass": "node-sass css/style.scss css/style.css"
