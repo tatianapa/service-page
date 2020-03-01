@@ -393,3 +393,32 @@ body{
   }
 }
 
+.footer{
+  display: flex;
+  background-color: var(--color-content-dark);
+  color: var(--color-main-light); 
+  padding: 15px 20px;
+  &__list{
+    list-style-type: none;
+    padding: 15px 15px 40px 0;
+    margin: 0;
+
+  }
+
+  &__list li{
+    padding: 7.5px 0px;
+  }
+
+
+  &__title{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-main-light);
+
+  }
+
+  &__column{
+    padding-right: 20px;
+  }
+}
+
