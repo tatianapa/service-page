@@ -7,6 +7,8 @@
   --color-content-dark: #3d3d3d;
   --color-grey-light: #959595;
   --deep-blue-color: #097e89;
+  --subscribe-color: #0072bc;
+  --subscribe-bg-color: #cccccc;
 }
 
 @mixin button($bg-color, $width) {
@@ -111,6 +113,10 @@ body{
         &:hover{
           color: var(--deep-blue-color);
           transform: translateY(-2px);
+        }
+        &:focus, &:active{
+          color: var(--deep-blue-color);
+          transform: scale(1.3);;
         }
     }
 
@@ -397,7 +403,7 @@ body{
   display: flex;
   background-color: var(--color-content-dark);
   color: var(--color-main-light); 
-  padding: 15px 20px;
+  padding: 30px 40px;
   &__list{
     list-style-type: none;
     padding: 15px 15px 40px 0;
@@ -407,6 +413,19 @@ body{
 
   &__list li{
     padding: 7.5px 0px;
+  }
+
+  &__link{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    &:active,
+    &:focus,
+    &hover {
+        border-bottom:  1px solid var(--color-main-light);
+        
+
+    }
   }
 
 
@@ -419,6 +438,28 @@ body{
 
   &__column{
     padding-right: 20px;
+    width: calc(50%/3);
+  }
+
+  &__input{
+    background-color: var(--subscribe-bg-color);
+    
+  }
+
+  &__btn{
+    background-color: var(--subscribe-color);
+    color: var(--color-main-light);
+    &:hover{
+      background-color: var(--subscribe-color);
+
+    }
+  }
+
+  &__contact{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }
 
