@@ -13,7 +13,7 @@
 </head>
 <body> 
 <div class="header">
-    <nav>
+    <nav id="myHeader">
         <div class="header__logo">
             <img src="images/LOGO.png" alt="logo">
         </div>
@@ -217,7 +217,20 @@
     </div>
 </section>
 
-
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 
 </body>
 </html>
