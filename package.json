@@ -14,7 +14,7 @@
   "dependencies": {},
   "devDependencies": {
     "node": "^13.8.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass": "^1.25.0"
   }
 }
